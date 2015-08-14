@@ -20,7 +20,7 @@ app.use('/movies',require('./controllers/movies.js'));
 app.use('/favorites',require('./controllers/favorites.js'));
 app.use('/tags',require('./controllers/tags.js'));
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 
 
 
